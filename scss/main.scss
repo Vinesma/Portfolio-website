@@ -5,23 +5,100 @@
     margin: 0;
     padding: 0;
 }
-
-body{
-    background-color: $background-color;
-    color: $text-color;
+html{
+    height: 100%;
+    body{              
+        background-color: $background-color;    
+        color: $text-color;
+        background: $background-image no-repeat center center fixed;    
+        background-size: cover;
+    
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;            
+            z-index: -1;
+            background: rgba($background-color, $bg-opacity);
+        }
+    }
 }
 
 .header{
+    padding-top: 30px;
+    padding-bottom: 10px;    
+    width: 100%;
+    z-index: 2;
+    background: rgba($secondary-color, $bg-opacity);
 
     ul{
-        margin-top: 50px;
         display: flex;
         flex-direction: row;
         list-style-type: none;
-        justify-content: center;        
+        justify-content: center;
 
         li{
-            margin: 0 .5rem;
+            margin: 0 2rem;
+            font-family: $fontf1;
+            font-size: 1.5rem;
+
+            a{
+                text-decoration: none;
+                color: $text-color-sc;
+
+                &:hover{
+                    color: $primary-color;
+                    border-bottom: 10px $primary-color solid;
+                    @include easeOut;
+                }
+            }
         }
     }
+}
+
+.home{
+    margin-top: 10vh;    
+    margin-bottom: 3rem;
+    overflow: hidden;
+
+    .portrait{
+        display: flex;
+        justify-content: center;
+        
+        img{
+            width: 250px;
+            height: 250px;
+            border: 3px $primary-color solid;
+            border-radius: 50%;
+        }
+    }
+
+    h1{
+        font-family: $fontf1;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+        a{
+            margin: 0 2rem;
+            text-decoration: none;
+            color: $text-color;
+
+            &:hover{
+                color: $primary-color;
+                @include easeOut;
+            }
+        }
+    }
+}
+
+footer{
+    font-family: $fontf1;
 }
