@@ -1,0 +1,27 @@
+@import 'config.scss';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $background-color;
+    color: $text-color;
+}
+
+.header{
+
+    ul{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: center;        
+
+        li{
+            margin: 0 .5rem;
+        }
+    }
+}
