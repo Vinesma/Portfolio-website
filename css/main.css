@@ -21,11 +21,12 @@ html {
       background: rgba(82, 82, 82, 0.8); }
 
 .header {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 10px;
+  border-bottom: 3px solid #5588a3;
   width: 100%;
   z-index: 2;
-  background: rgba(232, 232, 232, 0.8); }
+  background: url(../img/grid_noise.png); }
   .header ul {
     display: flex;
     flex-direction: row;
@@ -41,10 +42,10 @@ html {
         .header ul li a:hover {
           color: #5588a3;
           border-bottom: 10px #5588a3 solid;
-          transition: all 0.3s ease-out; }
+          transition: all 0.3s ease-in-out; }
 
 .home {
-  margin-top: 10vh;
+  margin-top: 15vh;
   margin-bottom: 3rem;
   overflow: hidden; }
   .home .portrait {
@@ -69,7 +70,7 @@ html {
       color: #fff; }
       .home .icons a:hover {
         color: #5588a3;
-        transition: all 0.3s ease-out; }
+        transition: all 0.3s ease-in-out; }
 
 footer {
   text-align: center;

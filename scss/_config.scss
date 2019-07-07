@@ -4,11 +4,12 @@ $background-color: #525252;
 $text-color: #fff;
 $text-color-sc: #525252;
 $background-image: url(../img/pexels-coding.jpg);
+$bg-image-pattern: url(../img/grid_noise.png);
 $bg-opacity: 0.8;
 $fontf1: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 @mixin easeOut {
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in-out;
 }
 
 //Media Query Mixins
