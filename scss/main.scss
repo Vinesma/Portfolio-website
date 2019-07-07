@@ -27,11 +27,12 @@ html{
 }
 
 .header{
-    padding-top: 30px;
-    padding-bottom: 10px;    
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid $primary-color;
     width: 100%;
     z-index: 2;
-    background: rgba($secondary-color, $bg-opacity);
+    background: $bg-image-pattern;
 
     ul{
         display: flex;
@@ -59,7 +60,7 @@ html{
 }
 
 .home{
-    margin-top: 10vh;    
+    margin-top: 15vh;    
     margin-bottom: 3rem;
     overflow: hidden;
 
