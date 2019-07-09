@@ -29,10 +29,10 @@ html{
 .header{
     padding-top: 20px;
     padding-bottom: 10px;
-    border-bottom: 3px solid $primary-color;
+    // border-bottom: 3px solid $primary-color;
     width: 100%;
     z-index: 2;
-    background: $bg-image-pattern;
+    // background: $bg-image-pattern;
 
     ul{
         display: flex;
@@ -47,11 +47,11 @@ html{
 
             a{
                 text-decoration: none;
-                color: $text-color-sc;
+                color: $text-color;
 
                 &:hover{
-                    color: $primary-color;
-                    border-bottom: 10px $primary-color solid;
+                    color: $primary-color; 
+                    border-bottom: 3px $primary-color solid;
                     @include easeOut;
                 }
             }
@@ -71,15 +71,65 @@ html{
         img{
             width: 250px;
             height: 250px;
-            border: 3px $primary-color solid;
+            border: 3px $secondary-color solid;
             border-radius: 50%;
+
+            &:hover{
+                border: 3px $primary-color solid;
+                @include easeOut;
+            }
         }
     }
 
-    h1{
+    h1, h4{
         font-family: $fontf1;
         text-align: center;
         margin-top: 1.5rem;
+
+        a{
+            color: $text-color;
+
+            &:hover{
+                color: $primary-color;
+                @include easeOut;
+            }
+        }
+    }
+
+    .about{
+        padding: 1rem 16rem;
+        margin-bottom: 1rem;
+        background: rgba($background-color, $bg-opacity);
+
+        h3{
+            font-family: $fontf1;
+            text-align: justify;            
+        }
+    }
+
+    .skills{
+        padding: 1rem 16rem;
+        background: rgba($background-color, $bg-opacity);
+        font-family: $fontf1;
+
+        table{
+            width: 100%;
+
+            th{
+                padding-bottom: 3px;
+                border-bottom: 1px $secondary-color solid;
+            }
+
+            th, td{
+                width: 50%;
+                text-align: center;
+            }
+        }
+    }
+
+    .contact{
+        padding: 0.5rem 0;        
+        background: rgba($background-color, $bg-opacity);
     }
 
     .icons{

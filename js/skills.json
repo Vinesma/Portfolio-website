@@ -1,0 +1,13 @@
+{
+    "skills":[
+        {
+            "name":"HTML",
+            "proficiency": "Advanced"
+        },
+        {
+            "name":"CSS",
+            "proficiency": "Advanced"
+        }
+    ]
+    
+}
