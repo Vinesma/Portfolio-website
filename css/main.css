@@ -23,10 +23,8 @@ html {
 .header {
   padding-top: 20px;
   padding-bottom: 10px;
-  border-bottom: 3px solid #5588a3;
   width: 100%;
-  z-index: 2;
-  background: url(../img/grid_noise.png); }
+  z-index: 2; }
   .header ul {
     display: flex;
     flex-direction: row;
@@ -38,10 +36,10 @@ html {
       font-size: 1.5rem; }
       .header ul li a {
         text-decoration: none;
-        color: #525252; }
+        color: #fff; }
         .header ul li a:hover {
-          color: #5588a3;
-          border-bottom: 10px #5588a3 solid;
+          color: #4592af;
+          border-bottom: 3px #4592af solid;
           transition: all 0.3s ease-in-out; }
 
 .home {
@@ -54,12 +52,42 @@ html {
     .home .portrait img {
       width: 250px;
       height: 250px;
-      border: 3px #5588a3 solid;
+      border: 3px #e8e8e8 solid;
       border-radius: 50%; }
-  .home h1 {
+      .home .portrait img:hover {
+        border: 3px #4592af solid;
+        transition: all 0.3s ease-in-out; }
+  .home h1, .home h4 {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     text-align: center;
     margin-top: 1.5rem; }
+    .home h1 a, .home h4 a {
+      color: #fff; }
+      .home h1 a:hover, .home h4 a:hover {
+        color: #4592af;
+        transition: all 0.3s ease-in-out; }
+  .home .about {
+    padding: 1rem 16rem;
+    margin-bottom: 1rem;
+    background: rgba(82, 82, 82, 0.8); }
+    .home .about h3 {
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+      text-align: justify; }
+  .home .skills {
+    padding: 1rem 16rem;
+    background: rgba(82, 82, 82, 0.8);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+    .home .skills table {
+      width: 100%; }
+      .home .skills table th {
+        padding-bottom: 3px;
+        border-bottom: 1px #e8e8e8 solid; }
+      .home .skills table th, .home .skills table td {
+        width: 50%;
+        text-align: center; }
+  .home .contact {
+    padding: 0.5rem 0;
+    background: rgba(82, 82, 82, 0.8); }
   .home .icons {
     display: flex;
     justify-content: center;
@@ -69,7 +97,7 @@ html {
       text-decoration: none;
       color: #fff; }
       .home .icons a:hover {
-        color: #5588a3;
+        color: #4592af;
         transition: all 0.3s ease-in-out; }
 
 footer {
